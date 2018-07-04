@@ -31,15 +31,15 @@ const substract = (a,b,c=2,s='') => {
 	if(c==1) {
 		a=a.split('').reverse(),b=b.split('').reverse(),r=[],n='0'
 		a.map((e,i)=>{
-			    if(i<b.length){
-					d=(+e >= (+b[i] + +n))?'0':'1'
-					r[i]=(+(d + e) - (+b[i] + +n)).toString()
-					n=d
-			    }else{
-					d=(+e >= +n)?'0':'1'
-					r[i]=(+(d + e) - +n).toString()
-					n=d
-			    }
+			if(i<b.length){
+				d=(+e >= (+b[i] + +n))?'0':'1'
+				r[i]=(+(d + e) - (+b[i] + +n)).toString()
+				n=d
+			}else{
+				d=(+e >= +n)?'0':'1'
+				r[i]=(+(d + e) - +n).toString()
+				n=d
+			}
 		})
 		return s+r.reverse().join('').replace(/^0+/,'')
 	} else if(c==-1) return substract(b,a,1,'-')
