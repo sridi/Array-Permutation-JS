@@ -52,10 +52,10 @@ const substract = (a,b,c=2,s='') => {
 const multiply = (a, b) => {
 	if(a=="0"||b=="0") return "0"
 	else{
-		    a=a.split('').reverse(),
-			b=b.split('').reverse(),
-			n=new Array(a.length),
-			r=new Array(a.length+b.length).fill(0)
+		a=a.split('').reverse(),
+		b=b.split('').reverse(),
+		n=new Array(a.length),
+		r=new Array(a.length+b.length).fill(0)
 		a.map((x,i)=>{
 			n[i]=new Array(a.length+b.length).fill(0)
 			b.map((y,j)=>{
