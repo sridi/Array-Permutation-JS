@@ -1,5 +1,5 @@
 # Arithmetic Operations
-Javascript algorithms for calculating arithmetic operations for big numbers given as strings
+Javascript algorithms doing arithmetic operations for big numbers given as strings
 
 ## Addition
 ```javascript
